@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="JAM WIB &amp; CANDLE FOREX"
+        android:textColor="#94A3B8"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvMainClock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="monospace"
+        android:text="00:00:00 WIB"
+        android:textColor="#FFFFFF"
+        android:textSize="32sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvStatusNtp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="Menunggu sinkronisasi..."
+        android:textColor="#38BDF8"
+        android:textSize="12sp" />
+
+    <RadioGroup
+        android:id="@+id/rgTimeframe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rbM1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="M1"
+            android:textColor="#FFFFFF" />
+
+        <RadioButton
+            android:id="@+id/rbM5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="M5"
+            android:textColor="#FFFFFF" />
+
+        <RadioButton
+            android:id="@+id/rbM15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="M15"
+            android:textColor="#FFFFFF" />
+
+        <RadioButton
+            android:id="@+id/rbM30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="M30"
+            android:textColor="#FFFFFF" />
+
+        <RadioButton
+            android:id="@+id/rbH1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="H1"
+            android:textColor="#FFFFFF" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnToggleOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:paddingVertical="14dp"
+        android:text="AKTIFKAN WIDGET MELAYANG" />
+
+    <Button
+        android:id="@+id/btnSyncNtp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="SINKRON ULANG JAM INTERNASIONAL" />
+
+</LinearLayout>
